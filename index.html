@@ -1,0 +1,83 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header;  text-align: center;}
+.item2 { grid-area: menu;  text-align: center;}
+.item3 { grid-area: main;  text-align: center; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu header header header header header'
+    'menu main main main main main'
+    'menu footer footer footer footer footer';
+  
+}
+  nav#navbar a{
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+header {
+ font-size: 1.5em;
+  font-weight: bold;
+}
+  
+  /* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1"><h2>Javascript Descriptions</div>
+    <div class="item2"><nav id="navbar"><header>Glossary</header><br>
+      <a href="#introduction" class="nav-link">Introduction</a><br>
+      <a href="#javascript" class="nav-link">Javascript</a><br>
+     <a href="#components" class="nav-link">Components</a><br>
+      <a href="#statement" class="nav-link">Statement</a><br>
+      <a href="#function" class="nav-link">Function</a><br>
+         <a href="#object" class="nav-link">Object</a><br>
+      <a href="#variable" class="nav-link">Variable</a><br>
+        </div></div>
+  <div class="item3"> 
+    <main id="main-doc">
+      <section class="main-section" id="introduction"><header><h3>Introduction<h3></header><br><p>A scripting language mainly known for its use on the web (But it can also be used in non web environments.)</p></section><br>
+        <section class="main-section" id="javascript"><header><h3>javascript</h3></header><br><p>Let's put it this way...Lets say www is human. Then HTML would be the bones. CSS would be the muscle and the tissue. A javascript would be the brain. Java is want makes website interactive. </p></section><br> 
+          <section class="main-section" id="components"><header><h3>Components</h3></header><br><p>Java is made up on of made of the following.....</p> <p>
+            <ul>
+              <li>Statements</li> 
+              <li>data types</li> 
+              <li>fuctions</li> 
+              <li>objects</li>
+              <li>arrays</li> 
+              <li>strings</li>
+              <li>methods</li>
+              <li>and many other elements......</li></p></section><br>
+            <section class="main-section" id="statement"><header><h3>Statement</h3></header><br><p>A statement is a set of instructions that you in javascript so that the computer can know what you want it to do. Such as variables.</p><p> Per example..... <br><code>var x = 5;</code><br><code>var y = 6;</code><br><code>var z = x + y;</code><br><code>document.getElementById("demo").innerHTML =
+"The value of z is: " + z;</code></p></section><br>
+                     <section class="main-section" id="function"><header><h3>Function</h3></header><br><p>A scripting language mainly known for its use on the web.</p><p> (But it can also be used in non web environments.)</p></section><br>
+                       <section class="main-section"id="object"><header><h3>Object</h3></header><br><p>A scripting language mainly known for its use on the web.</p><p> (But it can also be used in non web environments.)</p></section><br>
+         <section class="main-section"id="variable"><header><h3>Variable</h3></header><br><p>A variable stores a value.</p><p><code>Example: Var = 16</code>The number 16 would be the number that the varible is storing. </p></section><br>
+        </div>  
+ 
+</div>
+
+</body>
+</html>
+
